@@ -5,10 +5,10 @@ import android.widget.RatingBar;
 import android.widget.Switch;
 
 public class Movie {
-    private int rating;
-    private String name;
-    private boolean isFavorite;
-    private String description;
+    public int rating;
+    public String name;
+    public boolean isFavorite;
+    public String description;
 
     public Movie(int rating, String name, boolean isFavorite, String description ){
         this.rating = rating;

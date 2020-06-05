@@ -7,11 +7,15 @@
 
     <TextView
         android:id="@+id/movieTextView"
-        android:layout_width="122dp"
-        android:layout_height="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:padding="10dp"
         android:text="Name of movie"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,106 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".MovieForm">>
+    tools:context=".MovieForm"><![CDATA[>
+
+    ]]>
 
     <EditText
         android:id="@+id/movieNameText"
-        android:layout_width="279dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="5dp"
         android:textColor="#020202"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/movieNameLabel"
+        tools:layout_editor_absoluteY="46dp" />
 
     <TextView
         android:id="@+id/movieNameLabel"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="60dp"
+        android:padding="10dp"
         android:text="Enter Movie"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="60dp" />
 
     <RatingBar
         android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="78dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="46dp"
-        android:layout_marginEnd="155dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/movieNameLabel"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/movieNameLabel" />
 
     <Switch
         android:id="@+id/favoritesSwitch"
-        android:layout_width="192dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="223dp"
+        android:padding="10dp"
         android:text="Add to favorites"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
-        app:layout_constraintStart_toStartOf="@id/ratingBar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
     <EditText
         android:id="@+id/descriptionText"
-        android:layout_width="328dp"
-        android:layout_height="189dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="337dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:padding="10dp"
         android:singleLine="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/descriptionLabel"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionLabel"
-        app:layout_constraintVertical_bias="0.065" />
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
 
     <TextView
         android:id="@+id/descriptionLabel"
-        android:layout_width="202dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="180dp"
-        android:text="Add Description"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/favoritesSwitch"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:padding="10dp"
+        android:text="Add Description Below"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoritesSwitch" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="83dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="216dp"
+        android:padding="10dp"
         android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+        app:layout_constraintTop_toBottomOf="@id/descriptionLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
