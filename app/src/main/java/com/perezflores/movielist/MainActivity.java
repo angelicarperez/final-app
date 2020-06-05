@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ListView moviesListView;
     private ListView favoritesListView;
     private Button addButton;
+    private TextView movieListLabel;
+    private TextView favoritesListLabel;
     private ArrayList<Movie> favorites;
     private ArrayList<Movie> notFavorites;
     @Override
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void onFavoriteClick(AdapterView<?> parent, View v,
                                  int position, long id) {
         // get the item at the specified position
-        Movie movie = favorites.get(position);
+        Movie movie = notFavorites.get(position);
 
         // create an intent
         Intent intent = new Intent(this, MovieInfo.class);
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void onNotFavoriteClick(AdapterView<?> parent, View v,
                                  int position, long id) {
         // get the item at the specified position
-        Movie movie = notFavorites.get(position);
+        Movie movie = favorites.get(position);
 
         // create an intent
         Intent intent = new Intent(this, MovieInfo.class);

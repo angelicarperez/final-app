@@ -1,37 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MovieInfo">
+
+    <TextView
+        android:id="@+id/movieDescLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="558dp"
+        android:layout_marginBottom="291dp"
+        android:padding="10dp"
+        android:text="Movie Description"
+        android:textColor="#5B5B5B"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/movieTitle"
-        android:layout_width="187dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="93dp"
+        android:layout_width="204dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="507dp"
+        android:padding="10dp"
         android:text="TextView"
+        android:textColor="#5B5B5B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
 
     <TextView
         android:id="@+id/movieRating"
         android:layout_width="189dp"
         android:layout_height="42dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginBottom="355dp"
+        android:padding="10dp"
         android:text="TextView"
+        android:textColor="#5B5B5B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movieTitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/movieDesc"
         android:layout_width="192dp"
         android:layout_height="82dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginBottom="209dp"
+        android:padding="10dp"
         android:text="TextView"
+        android:textColor="#5B5B5B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="547dp"
+        android:padding="10dp"
+        android:text="Name Of Movie"
+        android:textColor="#5B5B5B"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <TextView
+        android:id="@+id/movieRatingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="397dp"
+        android:padding="10dp"
+        android:text="Rating"
+        android:textColor="#5B5B5B"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

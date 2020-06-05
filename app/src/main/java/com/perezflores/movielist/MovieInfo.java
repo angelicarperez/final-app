@@ -1,4 +1,5 @@
 package com.perezflores.movielist;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,10 +7,13 @@ import android.os.Bundle;
 
 import android.widget.TextView;
 
-public class MovieInfo extends Activity {
+public class MovieInfo extends AppCompatActivity {
     private TextView movieTitle;
     private TextView movieRating;
     private TextView movieDesc;
+    private TextView movieTitleLabel;
+    private TextView movieRatingLabel;
+    private TextView movieDescLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

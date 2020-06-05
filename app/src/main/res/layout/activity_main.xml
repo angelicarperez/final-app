@@ -8,36 +8,66 @@
 
     <ListView
         android:id="@+id/favoritesListView"
-        android:layout_width="370dp"
-        android:layout_height="252dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="18dp"
-        android:paddingLeft="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/moviesListView"
+        android:layout_width="409dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginBottom="361dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addbutton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/moviesListView"
-        android:layout_width="374dp"
-        android:layout_height="289dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginBottom="34dp"
-        android:paddingLeft="5dp"
+        android:layout_width="409dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="449dp"
+        android:layout_marginBottom="69dp"
+        android:paddingLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favoritesListView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addbutton"
         android:layout_width="148dp"
         android:layout_height="46dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="590dp"
         android:padding="10dp"
         android:text="Add Movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favoriteListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="580dp"
+        android:padding="10dp"
+        android:text="Favorites"
+        android:textColor="#5B5B5B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:layout_marginBottom="283dp"
+        android:padding="10dp"
+        android:text="Movies"
+        android:textColor="#5B5B5B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
